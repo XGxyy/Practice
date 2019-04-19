@@ -33,7 +33,7 @@ void Game(){
 	}
 }
 int main(){
-	srand((unsigned int)time(0));
+	srand((unsigned int)time(0));//按时间戳重置随机种子
 	while (1){
 		int choice = Menu();
 		if (choice == 0){
