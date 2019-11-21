@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	int i = 0;
+	int baiwei, shiwei, gewei;
+	for (i = 0; i <= 999; i++){
+		baiwei = i / 100;
+		shiwei = i / 10 - baiwei * 10;
+		gewei = i % 10;
+		if (i == baiwei*baiwei*baiwei + shiwei*shiwei*shiwei + gewei*gewei*gewei){
+			printf("%d\n", i);
+		}
+	}
+	system("pause");
+	return 0;
+}

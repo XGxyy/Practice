@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main(){
+	int num = 1;
+	float sum = 0;
+	float tem;
+	for (num = 1; num <= 100; num++){
+		tem = pow(-1, num + 1);
+		sum = sum + 1.0/num*tem;
+	}
+	printf("%f\n", sum);
+	system("pause");
+	return 0;
+}

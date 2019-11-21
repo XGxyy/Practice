@@ -1,0 +1,36 @@
+struct Point  //定义一个结构体
+{
+	int i;
+	int j;
+};
+struct Point Reseach_sou(int arr[][3], int row, int col, int key){
+	int i = 0;
+	int j = col-1;
+	struct Point ret = {-1,-1};
+	while ((j >= 0) && (i <= 2)){
+		if (arr[i][j] == key){
+			ret.i = i;		
+			ret.j = j;
+			return ret;
+		}
+		else if (arr[i][j] < key)
+			i++;		
+		else	
+			j--;	
+	}	
+	return ret;
+}
+
+int main(){	
+	int arr[][3] = {1, 2 ,3, 2, 3, 4, 3, 4, 5};
+	int row = 3;	
+	int col = 3;	
+	struct Point ret = Reseach_sou(arr, row, col, 5);        //返回一个结构体变量
+	if ((ret.i != -1)&&(ret.j != -1))	
+		printf("找到了，坐标为：%d %d\n",ret.i, ret.j);	
+	else
+		printf("找不到\n");
+
+	system("pause");
+	return 0;
+}

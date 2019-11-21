@@ -1,0 +1,21 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+int fibo(int n){
+	if (n <= 2){
+		return 1;
+	}
+	else{
+		return fibo(n - 1) + fibo(n - 2);
+	}
+}
+
+int main(){
+	int n = 0;
+	scanf("%d", &n);
+	int fbnq = fibo(n);
+	printf("%d\n", fbnq);
+	system("pause");
+	return 0;
+}

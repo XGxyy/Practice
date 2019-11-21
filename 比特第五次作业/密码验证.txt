@@ -1,0 +1,29 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+int take_in(char a[]){
+	char b[21]= {0};
+	for (int i = 0; i < 3; ++i){
+        scanf("%s", b);
+		if (strcmp(a, b)==0){
+			return 1;
+		}
+		else{
+			printf("ÊäÈë´íÎóÇëÖØÐÂÊäÈë£º\n");
+		}
+	}
+	return 0;
+}
+int main(){
+	char a[] = "gzy19980919";
+	printf("ÇëÊäÈëÃÜÂë£º");
+	if (take_in(a)){
+		printf("µÇÂ½³É¹¦\n");
+	}
+	else{
+		printf("µÇÂ½Ê§°Ü£¬½ûÖ¹µÇÂ½\n");
+	}
+	system("pause");
+	return 0;
+}

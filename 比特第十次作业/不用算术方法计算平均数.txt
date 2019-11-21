@@ -1,0 +1,15 @@
+int average(int x , int y){
+	int tmp = 0;
+	tmp = (x & y) + ((x ^ y) >> 1);
+	return tmp;
+}
+
+int main(){
+	int a = 0;
+	int b = 0;
+	scanf("%d %d", &a, &b);
+	int ave = average(a, b);
+	printf("%d\n", ave);
+	system("pause");
+	return 0;
+}

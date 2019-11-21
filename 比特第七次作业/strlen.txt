@@ -1,0 +1,33 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+int fdStrLen(char* p){
+	int sum = 0;
+	while (*p){
+		sum++;
+		++p;
+	}
+	return sum;
+}
+
+int dStrLen(char* p){
+	if (*p == '\0')
+	{
+		return 0;
+	}
+	else
+	{
+		return 1 + dStrLen(p + 1);
+	}
+}
+
+int main(){
+	char* ch = "abcdef";
+	int sl = fdStrLen(ch);
+	printf("非递归测字符长度为：%d\n", sl);
+	sl = dStrLen(ch);
+	printf("递归测字符长度为：%d\n", sl);
+	system("pause");
+	return 0;
+}

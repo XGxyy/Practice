@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+//0 1 2 3 5 6 tmp = 0
+//1 0 2 3 5 6 tmp = 1
+//1 0 2 3 5 6 tmp = 1
+void Again(int a[], int len){
+	int tmp = 0;
+	for (int i = 0; i < len; ++i){
+		if (a[i] % 2 != 0){
+			//ÊÇÆæÊý
+			int btw = a[i];
+			 a[i] = a[tmp];
+			 a[tmp] = btw;
+			 ++tmp;
+		}
+		else {
+			continue;
+		}
+	}
+	for (int i = 0; i < len; ++i){
+		printf("%d ", a[i]);
+	}
+}
+
+int main(){
+	int arr[10] = { 0, 1, 2, 3, 5, 6, 7, 9, 10, 15};
+	Again(arr, 10);
+	system("pause");
+	return 0;
+}

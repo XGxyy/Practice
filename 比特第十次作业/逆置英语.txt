@@ -1,0 +1,43 @@
+void reverse(char a[], int left, int right)//ÄæĞòº¯Êı
+{
+	while (left<right)
+	{
+		char tmp = a[left];
+		a[left] = a[right];
+		a[right] = tmp;
+		left++;
+		right--;
+	}
+
+}
+char* reverse_string(char a[])//ÄæĞò×Ö·û´®
+{
+	int i = 0;
+	int left = 0;
+	int right = 14 - 1;//ÄæĞòÕû¸ö×Ö·û´®
+	reverse(a, left, right);
+	//ÄæĞòÖğ¸öµ¥´Ê
+	while (a[i] != '\0')
+	{
+		left = i;
+		while ((a[i] != '\0') && (a[i] != ' '))
+		{
+			i++;
+
+		}
+		right = i - 1;
+		reverse(a, left, right);
+		if (a[i] != '\0')
+			i++;
+	}
+	return a;
+}
+
+int main()
+{
+	char a[] = "student a am i";
+	reverse_string(a);
+	printf("%s\n", a);
+	system("pause");
+	return 0;
+}

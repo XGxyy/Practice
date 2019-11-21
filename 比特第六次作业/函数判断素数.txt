@@ -1,0 +1,24 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+void judge(int num){
+	if (num = 1){
+		printf("是素数\n");
+	}
+	for (int i = 1; i < num; ++i){
+		if (num%i == 0){
+			printf("不是素数\n");
+			break;
+		}
+		else{
+			printf("是素数\n");
+		}
+	}
+}
+int main(){
+	int n = 0;
+	scanf("%d", &n);
+	judge(n);
+	system("pause");
+	return 0;
+}

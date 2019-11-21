@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+int bigwords(char ch){
+	return ch <= 'Z'&&ch >= 'A';
+}
+int smallwords(char ch){
+	return ch <= 'z'&&ch >= 'a';
+}
+int num(char ch){
+	return ch <= 9 && ch >= 0;
+}
+int main(){
+	char ch = { 0 };
+	while (ch != '@'){
+		ch = getchar();
+		if (bigwords(ch)){
+			putchar(ch + 32);
+		}
+		else if (smallwords(ch)){
+			putchar(ch - 32);
+		}
+		else {
+			//do nothing
+		}
+	}
+		system("pause");
+		return 0;
+	
+}

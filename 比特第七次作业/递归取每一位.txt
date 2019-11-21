@@ -1,0 +1,19 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+void print(int n){
+	printf("%d ", n % 10);
+	if (n > 9){
+		print(n / 10);
+	}
+	printf("\n");
+}
+
+int main(){
+	int num = 0;
+	scanf("%d", &num);
+	print(num);
+	system("pause");
+	return 0;
+}

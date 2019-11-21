@@ -1,0 +1,25 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+//2^3=2*2^2
+//2^2=2*2^1
+int Pow(int n,int k){
+	if (k == 1){
+		return n;
+	}
+	else{
+		return Pow(n,k-1)*n;
+	}
+}
+
+int main(){
+	int n = 0;
+	int k = 0;
+	printf("请输入底数和幂（空格隔开）：");
+	scanf("%d %d", &n, &k);
+	int answer = Pow(n, k);
+	printf("%d\n", answer);
+	system("pause");
+	return 0;
+}

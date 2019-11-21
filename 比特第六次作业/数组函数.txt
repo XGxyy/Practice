@@ -1,0 +1,43 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+void reverse(int a[],int n){
+	int tmp[5];
+	for (int i = n-1; i >= 0; --i){
+		tmp[4 - i] = a[i];
+	}
+	for (int i = 0; i < n; ++i){
+		printf("%d ", tmp[i]);
+	}
+	putchar('\n');
+}
+void empty(int a[], int n){
+	for (int i = 0; i < n; ++i){
+		a[i] = 0;
+		printf("%d ", a[i]);
+	}
+	putchar('\n');
+}
+void init(int a[],int n){
+	for (int i = 0; i < n; ++i){
+		int tmp = 0;
+		scanf("%d", &a[i]);
+	}
+	for (int i = 0; i < n; ++i){
+		printf("%d ", a[i]);
+	}			
+	putchar('\n');
+}		
+int main(){
+	int a[5];
+	int ch = sizeof(a) / sizeof(a[0]);
+	printf("请初始化数组：\n");
+	init(a,ch);	
+	printf("对数组进行逆置：\n");
+	reverse(a, ch);
+	printf("请清空数组：\n");
+	empty(a, ch);
+
+	system("pause");
+	return 0;
+}

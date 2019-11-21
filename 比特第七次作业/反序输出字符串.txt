@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//先找\0,一直计数直到找到\0为止开始输出此位置-1的字符。
+void reverse_string(char* string){
+	if ('\0' != *(++string))
+		reverse_string(string);
+	printf("%c", *(string - 1));
+}
+
+int main(){
+	char* ch = "abcdefg";
+	reverse_string(ch);
+	putchar('\n');
+	system("pause");
+	return 0;
+}

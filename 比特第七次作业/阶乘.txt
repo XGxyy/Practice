@@ -1,0 +1,31 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+int fdTMP(int n){
+	int tmp = 1;
+	for (int i = 1; i <= n; ++i){
+		tmp = tmp*i;
+	}
+	return tmp;
+}
+
+int dTMP(int n){
+	if (n == 1){
+		return 1;
+	}
+	else{
+		return n*dTMP(n - 1);
+	}
+}
+
+int main(){
+	int n = 0;
+	scanf("%d", &n);
+	int answer = dTMP(n);
+	printf("递归方法得到的值：%d\n", answer);
+    int Answer = fdTMP(n);
+	printf("非递归方法得到的值：%d\n", Answer);
+	system("pause");
+	return 0;
+}
