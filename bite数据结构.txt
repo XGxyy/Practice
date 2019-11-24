@@ -1,0 +1,11 @@
+Clairad
+用函数表示复杂度的增加情况
+链表遍历
+单向的
+for(cur = head; cur; cur = cur->next){
+	cur;
+}
+双向的
+for(cur = head->next; cur != head; cur = cur->next){
+	cur;
+}
