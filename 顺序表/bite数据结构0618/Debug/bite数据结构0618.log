@@ -1,0 +1,20 @@
+﻿生成启动时间为 2019/6/22 12:16:51。
+     1>项目“C:\Users\wangkexin\Documents\Visual Studio 2013\Projects\bite数据结构0618\bite数据结构0618\bite数据结构0618.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt seq.list.c
+         seq.list.c
+     1>c:\users\wangkexin\documents\visual studio 2013\projects\bite数据结构0618\bite数据结构0618\seq.list.c(59): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\wangkexin\documents\visual studio 2013\projects\bite数据结构0618\bite数据结构0618\seq.list.c(68): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\wangkexin\documents\visual studio 2013\projects\bite数据结构0618\bite数据结构0618\seq.list.c(80): warning C4018: “>=”: 有符号/无符号不匹配
+     1>c:\users\wangkexin\documents\visual studio 2013\projects\bite数据结构0618\bite数据结构0618\seq.list.c(79): warning C4101: “i”: 未引用的局部变量
+     1>c:\users\wangkexin\documents\visual studio 2013\projects\bite数据结构0618\bite数据结构0618\seq.list.c(90): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\wangkexin\documents\visual studio 2013\projects\bite数据结构0618\bite数据结构0618\seq.list.c(112): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\wangkexin\Documents\Visual Studio 2013\Projects\bite数据结构0618\Debug\bite数据结构0618.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\wangkexin\Documents\Visual Studio 2013\Projects\bite数据结构0618\Debug\bite数据结构0618.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\wangkexin\Documents\Visual Studio 2013\Projects\bite数据结构0618\Debug\bite数据结构0618.lib" /MACHINE:X86 Debug\main.obj
+         Debug\seq.list.obj
+         bite数据结构0618.vcxproj -> C:\Users\wangkexin\Documents\Visual Studio 2013\Projects\bite数据结构0618\Debug\bite数据结构0618.exe
+     1>已完成生成项目“C:\Users\wangkexin\Documents\Visual Studio 2013\Projects\bite数据结构0618\bite数据结构0618\bite数据结构0618.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.67
