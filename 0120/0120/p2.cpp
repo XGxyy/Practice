@@ -18,6 +18,15 @@ public:
 		}
 		return true;
 	}
+
+	//»ØÎÄÊı
+	bool isPalindrome(int x) {
+		string str;
+		for (int i = x; i; i /= 10){
+			
+		}
+	}
+
 };
 
 int main(){
